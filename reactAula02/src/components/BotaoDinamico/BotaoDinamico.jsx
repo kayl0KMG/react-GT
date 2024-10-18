@@ -10,7 +10,8 @@ function BotaoDinamico(props){ //props-PROPRIEDADES
     fontSize: '16px',
    }
 
-   return <button style={estiloBotao} >
+   return <button style={estiloBotao} onClick={props.click}>
+             {props.children}
           </button>
 }
 
